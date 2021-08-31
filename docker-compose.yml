@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  db:
+    image: postgres:12-alpine
+    container_name: postgres-sample
+    ports:
+      - 5432:5432
+    env_file:
+      - ./.env
+    volumes:
+      - ./tmp-pgdata:/var/lib/postgresql/data
