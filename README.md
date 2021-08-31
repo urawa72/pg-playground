@@ -17,9 +17,9 @@ psql -h localhsot -p 5432 -U postgres -d sample
 # select databases
 \c database_name
 
-# execute init.sql with file
-\i ./sql/init.sql
-
 # list tables
 \dt
+
+# execute sql
+select * from users;
 ```
